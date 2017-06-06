@@ -1,11 +1,14 @@
-function drawTree(i){
-	for (var i=0; i<10; i++) {
-		var star = toString();
-		for (var j=0; j<=i; j++) {
-			var star = star += '*';
+function drawTree(x) {
+	//tworzy rzędy:
+	debugger;
+	for (var i=0; i<x; i++) {
+		var gwiazdka = '*';
+		//ilosc w rzedzie
+		for (var j=0; j<i; j++) {
+			gwiazdka = gwiazdka + '*'
+
 		}
-	console.log(star);
+		console.log(gwiazdka);
 	}
 }
-console.log(drawTree(6));
-// czy o takie coś chodziło? 
+drawTree(5);
